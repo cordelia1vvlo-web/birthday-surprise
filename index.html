@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday 🎂</title>
+<style>
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Georgia, serif;
+  text-align: center;
+  color: #754b62;
+  background: linear-gradient(145deg, #fff0f5, #ffe1eb, #fff8f0);
+  overflow-x: hidden;
+}
+main {
+  padding: 35px 20px;
+  max-width: 500px;
+  margin: auto;
+}
+.card {
+  background: #ffffffc9;
+  border: 1px solid white;
+  border-radius: 28px;
+  padding: 28px 22px;
+  box-shadow: 0 12px 35px #d99bb633;
+  margin-top: 25px;
+}
+.bow { font-size: 48px; }
+h1 { font-size: 36px; line-height: 1.2; }
+p { line-height: 1.8; font-size: 17px; }
+button {
+  background: #e88eb0;
+  color: white;
+  border: none;
+  padding: 14px 22px;
+  border-radius: 30px;
+  font-size: 16px;
+  margin-top: 12px;
+  cursor: pointer;
+}
+#surprise { display: none; }
+.heart { font-size: 23px; animation: float 2s infinite alternate; }
+@keyframes float {
+  from { transform: translateY(0); }
+  to { transform: translateY(-9px); }
+}
+footer { font-size: 13px; margin: 25px; }
+</style>
+</head>
+<body>
+<main>
+  <div class="bow">🎀</div>
+  <div class="heart">♡ 💗 ♡</div>
+  <h1>Happy Birthday!! 🎂</h1>
+  <p>A little birthday surprise, just for you ✨</p>
+
+  <section class="card">
+    <div style="font-size:42px">🎁</div>
+    <h2>It's your special day!</h2>
+    <p>
+      Hey birthday boy! 🫶<br>
+      I hope your day is full of laughter,
+      yummy cake, good memories, and
+      all the little things that make you happy.
+    </p>
+    <p>
+      May this new chapter bring you lots
+      of success, peace, fun, and reasons
+      to smile. Keep being your wonderful self!
+    </p>
+    <p>Wishing you the happiest birthday ever! 💌</p>
+
+    <button onclick="document.getElementById('surprise').style.display='block';this.style.display='none'">
+      Open your surprise 🎁
+    </button>
+
+    <div id="surprise">
+      <h2>One more thing... 💗</h2>
+      <p>
+        I'm really glad I got to know you.
+        Never stop smiling, keep chasing your
+        dreams, and have an amazing year ahead!
+      </p>
+      <div style="font-size:35px">🎂 🧸 🌷</div>
+      <p>From your friend, with lots of good wishes ♡</p>
+    </div>
+  </section>
+  <footer>made with ♡ and a little birthday magic</footer>
+</main>
+</body>
+</html>
